@@ -89,10 +89,6 @@
     var box = document.createElement("span");
     box.className = "gflash";
     box.setAttribute("aria-hidden", "true");
-    var score = (0.9 + ((label.length * 7) % 10) / 100).toFixed(2);
-    var tag = document.createElement("span");
-    tag.textContent = label + " " + score;
-    box.appendChild(tag);
     el.appendChild(box);
     setTimeout(function () { box.classList.add("out"); }, 1500);
     setTimeout(function () { box.remove(); }, 2000);
